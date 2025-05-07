@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astronomi Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <header>
+        <h1>🌌 Astronomi Dashboard</h1>
+        <button id="toggle-theme">🌓 Ganti Tema</button>
+      </header>
+
+      <section class="time-section">
+        <h2>🕒 Waktu Lokal</h2>
+        <p id="local-time">--:--:--</p>
+      </section>
+
+      <section class="astro-section">
+        <h2>🌞 Sunrise & Sunset</h2>
+        <p id="sunrise">Sunrise: --:--</p>
+        <p id="sunset">Sunset: --:--</p>
+      </section>
+
+      <section class="moon-section">
+        <h2>🌙 Fase Bulan</h2>
+        <p id="moon-phase">Memuat...</p>
+      </section>
+
+      <section class="planet-section">
+        <h2>🪐 Planet Terlihat</h2>
+        <ul id="planets-list"></ul>
+      </section>
+      <section class="notes-section">
+        <h2>📝 Catatan Astronomi</h2>
+        <form id="note-form">
+          <input
+            type="text"
+            id="note-input"
+            placeholder="Tulis catatan..."
+            required
+          />
+          <button type="submit">Tambah Catatan</button>
+        </form>
+        <ul id="notes-list"></ul>
+      </section>
+
+      <section class="quote-section">
+        <h2>📜 Kutipan Sains</h2>
+        <blockquote id="science-quote">Memuat kutipan...</blockquote>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
